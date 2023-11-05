@@ -1,0 +1,18 @@
+mixin location()
+    section.location#Location 
+        .map 
+            img(src="@img/map.svg", alt="")
+        .container
+            .location-panel
+                h3.location-subtitle Iconic place 
+                h2.location-title Location 
+                p.location-p Saadiyat Island is a place where luxury and elegance converge, offering a unique blend of cultural, recreational, and residential experiences. 
+                button.location-btn.popup-brochure-open More
+
+        .location-panel-mob
+            h3.location-subtitle the best place 
+            h2.location-title Location 
+            p.location-p Saadiyat Island is a place where luxury and elegance converge, offering a unique blend of cultural, recreational, and residential experiences. 
+            button.location-btn.popup-brochure-open More
+            .location-panel__map
+                img(src="@img/map-mob.svg", alt="")

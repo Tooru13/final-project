@@ -1,0 +1,56 @@
+include components/header 
+include components/intro 
+include components/features 
+include components/about 
+include components/brochure 
+include components/location 
+include components/developer 
+include components/consultation 
+include components/footer 
+include components/popup 
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="description")
+        link(rel="stylesheet", href="css/style.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        link(rel="apple-touch-icon" href="@img/intro.png")
+        link(rel="apple-touch-icon" sizes="180x180" href="@img/favicon/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="@img/favicon/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="@img/favicon/favicon-16x16.png")
+        link(rel="manifest" href="@img/favicon/site.webmanifest")
+        link(rel="mask-icon" href="@img/favicon/safari-pinned-tab.svg" color="#5bbad5")
+        link(rel="shortcut icon" href="@img/favicon/favicon.ico")
+        meta(name="msapplication-TileColor" content="#da532c")
+        meta(name="msapplication-config" content="@img/favicon/browserconfig.xml")
+        meta(name="theme-color" content="#ffffff")
+        meta(name="call-dn" content="+971564156565")
+        meta(name="wp-dn" content="971523561901")
+        meta(name="project" content="the_community")
+        meta(name="thankyou-title" content="Thank you for your interest!")
+        meta(name="thankyou-title-repeat" content="Do you want to resend the form?")
+        meta(name="thankyou-subtitle" content="We&#039;ll get back to you soon")
+        meta(name="thankyou-btn-send" content="Send")
+        meta(name="thankyou-btn-cancel" content="Cancel")
+        meta(name="thankyou-repeat-ty" content="Thank you!")
+        meta(name="thankyou-repeat-cc" content="Cancelled")
+        title A-01 SAADIYAT
+    body#body 
+        +header 
+        main 
+            +intro
+            +features
+            +about
+            +brochure
+            +location 
+            +developer
+            +consultation
+        +footer
+        +popup  
+        script(src="js/app.min.js") 
+        //- script(src="https://form.sales-inquiries.ae/static/form-dist.js")
+        //- script(src="https://form.sales-inquiries.ae/static/events-ajax-dist.js")
